@@ -18,6 +18,11 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  server:{
+    proxy:{
+      'api':'http://testapi.xuexiluxian.cn'
+    }
+  },
   resolve: {
     // 配置路径别名
     alias: {

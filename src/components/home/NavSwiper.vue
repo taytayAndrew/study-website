@@ -25,10 +25,9 @@
 					</li>
 				</ul>
 				<div>
-					<el-carousel :interval="5000" arrow="always">
-					    <el-carousel-item v-for="item in 4" :key="item">
-					      <h3 text="2xl" justify="center">{{ item }}</h3>
-                          <img src="@/assets/img/main.jpg" />
+					<el-carousel :interval="5000" arrow="always" v-if="slideList.length > 0 ">
+					    <el-carousel-item v-for="item in slideList" :key="item.id">
+                         <img :src='item' />
 					    </el-carousel-item>
 					</el-carousel>
 				</div>
@@ -86,6 +85,15 @@
 
 <script setup>
 //element
+let slideList =[
+	"/src/assets/img/main.jpg"
+,
+	"/src/assets/img/main2.jpg"
+,
+	"/src/assets/img/main3.jpg"
+,
+	"/src/assets/img/main4.png"
+]
 import { ArrowRight } from '@element-plus/icons-vue';
 </script>
 

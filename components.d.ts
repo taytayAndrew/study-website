@@ -11,9 +11,11 @@ declare module 'vue' {
     ElCarousel: typeof import('element-plus/es')['ElCarousel']
     ElCarouselItem: typeof import('element-plus/es')['ElCarouselItem']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    Footer: typeof import('./src/components/common/Footer.vue')['default']
     Header: typeof import('./src/components/common/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     NavSwiper: typeof import('./src/components/home/NavSwiper.vue')['default']
+    NewCourse: typeof import('./src/components/home/NewCourse.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
